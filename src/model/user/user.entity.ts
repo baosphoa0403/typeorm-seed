@@ -1,12 +1,5 @@
-import {
-  Entity,
-  Column,
-  PrimaryGeneratedColumn,
-  ManyToMany,
-  JoinTable,
-  OneToMany,
-} from 'typeorm';
-import { CourseEntity } from '../course/course.entity';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
+
 import { UserCourse } from '../user_course/user_course.entity';
 
 @Entity({ name: 'user' })
